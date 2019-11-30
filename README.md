@@ -156,3 +156,10 @@ leyou-gateway，leyou-auth-service,leyou-cart,leyou-order这四个模块的appli
 sql文件
 
 注意：只能MySQL5.6环境，其他的不行哦。
+
+
+
+## 5.nginx.conf
+
+nginx的配置文件参考。
+
