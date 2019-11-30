@@ -84,8 +84,6 @@ cd elasticsearch/bin/
 
 我是虚拟机开机自启的。
 
-在leyou-cart模块用到了
-
 
 
 ##### 1.3.3生成公钥和私钥
@@ -140,6 +138,16 @@ leyou-gateway，leyou-auth-service,leyou-cart,leyou-order这四个模块的appli
 ##### 1.4.2虚拟机地址
 
 所有application.yml中的虚拟机地址请都改成自己的。
+
+
+
+1.4.2微信支付
+
+在leyou-order模块的微信支付配置（application.yml）需要自己去申请。
+
+我没申请到所以用的是别人的。
+
+申请方式自行百度。
 
 
 
