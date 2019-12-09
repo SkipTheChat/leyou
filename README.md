@@ -1,14 +1,130 @@
-## 1.leyou-manage-web
+# 乐优商城 - 微服务架构 [![issues](https://img.shields.io/bitbucket/issues-raw/2227324689/ToBeBetter.svg?style=flat-square)](https://github.com/2227324689/gpmall/issues) ![author](https://img.shields.io/badge/author-Charlotte-blue.svg?style=flat-square) [![origin](https://img.shields.io/badge/origin-not me-yellowgreen.svg?style=flat-square)](https://www.gupaoedu.com)
 
-后台管理页面，负责商品和品牌的上架下架修改搜索等等。
+高仿项目。非原创。
 
-主要对应leyou（后端代码）中的leyou-item，leyou-upload模块
 
-#### 1.1需要环境
 
-vue
+# 1.项目用到的技术
 
-1.2启动命令
+项目采用前后端分离开发，前端代码已给，为leyou-manage-web和leyou-portal。
+
+核心的技术栈用的是SpringBoot+SpringCloud。
+
+### 1.1 前端使用的技术
+
+- vue
+
+  
+
+### 1.2 后端使用的技术
+
+- SpringBoot
+- SpringCloud
+- Mybatis
+- Elasticsearch
+- RabbitMQ
+- Thymeleaf
+- MySQL
+- Redis
+- FastDFS
+
+
+
+
+
+# 2.项目模块说明
+
+| 作用                                                        | 模块名          | 端口     |
+| :---------------------------------------------------------- | :-------------- | :------- |
+| Springcloud的eruka注册中心，注册了所有的模块业务            | leyou-registry  | 10086    |
+| 网关                                                        | leyou-gateway   | 10010    |
+| 商家后台的管理商品页面                                      | leyou-item      | 9081     |
+| 专门的图片上传模块                                          | leyou-upload    | 9082     |
+| 搜索功能(elasticsearch)                                     | leyou-search    | 9083     |
+| 点击商品打开后的商品详情页面模块                            | leyou-goods-web | 9084     |
+| 短信验证工具模块，并使用了rabbitMQ接收消息                  | leyou-sms       | 9086     |
+| 用户登录注册校验身份模块，使用了rabbitMQ发送消息给leyou-sms | leyou-user      | 9085     |
+| 授权中心（生成与解析token）                                 | leyou-auth      | 9087     |
+| 购物车模块                                                  | leyou-cart      | 9088     |
+| 订单模块                                                    | leyou-order     | 9089     |
+| 公共模块，存放工具类等。（无需启动）                        | leyou-common    | 无需启动 |
+
+
+
+
+
+# 3.项目开发进度
+
+### 3.1 前台用户界面
+
+- 首页渲染、根据关键词搜索、根据分类过滤搜索、点击商品进入详情页
+- 注册、登录、点击商品属性加入购物车
+- 购物车、下单、支付
+
+![1](C:\Users\Lenovo\Desktop\temp\leyou\assets\1.jpg)
+
+
+
+
+
+![2](C:\Users\Lenovo\Desktop\temp\leyou\assets\2.jpg)
+
+
+
+![3](C:\Users\Lenovo\Desktop\temp\leyou\assets\3.jpg)
+
+
+
+
+
+![4](C:\Users\Lenovo\Desktop\temp\leyou\assets\4.png)
+
+
+
+
+
+![5](C:\Users\Lenovo\Desktop\temp\leyou\assets\5.png)
+
+
+
+
+
+
+
+### 3.2 后台商家管理界面
+
+- 首页渲染
+- 商品管理的分类管理、品牌管理、商品列表、规格参数四个模块的增删改查
+
+
+
+![TIM截图20191209214657](C:\Users\Lenovo\Desktop\temp\leyou\assets\TIM截图20191209214657.png)
+
+
+
+
+
+![TIM截图20191209214804](C:\Users\Lenovo\Desktop\temp\leyou\assets\TIM截图20191209214804.png)
+
+
+
+
+
+![TIM截图20191209214851](C:\Users\Lenovo\Desktop\temp\leyou\assets\TIM截图20191209214851.png)
+
+
+
+
+
+# 4.项目部署
+
+>部署前请先看注意事项修改相关配置
+
+
+
+### 4.1 开启商家管理界面
+
+cmd进入leyou-manage-web项目路径，启动命令：
 
 ```
 npm start
@@ -16,13 +132,11 @@ npm start
 
 
 
-## 2.leyou-portal
 
-前台用户搜索购买界面。
 
-主要对应leyou（后端代码）中的leyou-search，leyou-goods，leyou-sms，leyou-user，leyou-auth，leyou-cart，leyou-order模块
+### 4.2 开启用户搜索界面
 
-#### 1.1启动命令
+cmd进入leyou-portal项目路径，启动命令：
 
 ```
 live-server --port=9002
@@ -30,69 +144,36 @@ live-server --port=9002
 
 
 
-## 3.leyou
+### 4.3 开启后端项目
 
-#### 1.1模块介绍
+用编译器打开项目，分别用tomcat启动各个模块。
 
-leyou-registry：eruka配置中心
-
-leyou-gateway：网关
-
-leyou-item：后台商品页面
-
-leyou-upload：图片上传模块
-
-leyou-search：elasticseatch搜索功能
-
-leyou-goods：商品详情
-
-leyou-sms：短信验证工具模块，使用了rabbitMQ接收消息
-
-leyou-user：用户登录注册校验身份模块，使用了rabbitMQ发送消息给leyou-sms
-
-leyou-auth：授权中心（生成与解析token）
-
-leyou-cart：购物车模块
-
-leyou-order：订单模块
+**模块启动顺序与项目模块说明的顺序一致**。若不一致，可能导致启动报错。
 
 
 
-#### 1.2模块开启顺序
-
-与1.1介绍一致，开启顺序不一致可能导致错误
 
 
+# 5.注意事项
 
-#### 1.3开启项目前准备
+### 5.1依赖
 
-##### 1.3.1开启elasticsearch
-
-在leyou-search模块用到了。如果不使用leyou-search的功能，不开也行
-
-我这里是虚拟机开的，在leyou用户下，去虚拟机配置一下elasticsearch并开启就行了。
-
-```
-su - leyou
-cd elasticsearch/bin/
-./elasticsearch
-```
+项目启动之前需启动**elasticsearch，redis以及nginx**，相关虚拟机地址在各yml文件中修改。
 
 
 
-##### 1.3.2启动redis
+### 5.2公钥私钥生成
 
-我是虚拟机开机自启的。
+ 验证用户登录需要使用公私钥，自动生成的代码在
+
+	> leyou-auth/leyou-auth-common/src/test/com/leyou/auth/test/JwtTest.java
 
 
 
-##### 1.3.3生成公钥和私钥
+使用方法：
 
-找到leyou-auth/leyou-auth-common/src/test/com/leyou/auth/test/JwtTest.java
-
-pubKeyPath和priKeyPath为你想要生成的密钥的路径，你可以放在想要的位置
-
-改好了路径注释掉以下代码
+- 先注释下面代码块代码
+- 然后运行testRsa方法生成密钥
 
 ```
 @Before
@@ -102,25 +183,11 @@ public void testGetRsa() throws Exception {
 }
 ```
 
-**运行testRsa方法生成密码**
+- 生好了记得修改leyou-gateway，leyou-auth-service,leyou-cart,leyou-order这四个模块的application.yml文件公私钥地址为你自己的公私钥生成地址
 
 
 
-testGenerateToken和testParseToken分别了生成和解析token的测试，你可以把上面注释的代码还原后进行测试是否成功。
-
-
-
-##### 1.3.4修改公钥和私钥为你自己设置的位置
-
-leyou-gateway，leyou-auth-service,leyou-cart,leyou-order这四个模块的application.yml文件中
-
-除了leyou-auth-service配置了公私钥（授权中心），其他都是配置的公钥
-
-
-
-#### 1.4注意事项
-
-##### 1.4.1阿里云短信
+### 5.3 阿里云验证码短信
 
 在leyou-ssm模块application.yml中配置了阿里云短信，这里改成你自己的账号。具体申请方式自发百度。
 
@@ -135,13 +202,7 @@ leyou-gateway，leyou-auth-service,leyou-cart,leyou-order这四个模块的appli
 
 
 
-##### 1.4.2虚拟机地址
-
-所有application.yml中的虚拟机地址请都改成自己的。
-
-
-
-1.4.2微信支付
+### 5.4 微信支付
 
 在leyou-order模块的微信支付配置（application.yml）需要自己去申请。
 
@@ -151,15 +212,15 @@ leyou-gateway，leyou-auth-service,leyou-cart,leyou-order这四个模块的appli
 
 
 
-## 4.leyou.sql
+### 5.5 sql文件
 
-sql文件
-
-注意：只能MySQL5.6环境，其他的不行哦。
+> 注意：只能MySQL5.6环境引入sql文件，其他的不行哦。
 
 
 
-## 5.nginx.conf
+### 5.6 nginx地址配置参考
 
-nginx的配置文件参考。
+参考当前目录下的nginx.conf
+
+
 
