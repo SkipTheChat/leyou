@@ -1,4 +1,4 @@
-# 乐优商城 - 微服务架构 [![issues](https://img.shields.io/bitbucket/issues-raw/2227324689/ToBeBetter.svg?style=flat-square)](https://github.com/2227324689/gpmall/issues) ![author](https://img.shields.io/badge/author-Charlotte-blue.svg?style=flat-square) [![origin](https://img.shields.io/badge/origin-not me-yellowgreen.svg?style=flat-square)](https://www.gupaoedu.com)
+# 乐优商城 - 微服务架构 [![issues](https://img.shields.io/bitbucket/issues-raw/2227324689/ToBeBetter.svg?style=flat-square)](#)  [![origin](https://img.shields.io/badge/origin-not me-yellowgreen.svg?style=flat-square)](#)[![author](https://img.shields.io/badge/author-Charlotte-blue.svg?style=flat-square)](#) 
 
 高仿项目。非原创。
 
