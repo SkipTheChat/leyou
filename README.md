@@ -1,14 +1,20 @@
-# 乐优商城 - 微服务架构 [![issues](https://img.shields.io/bitbucket/issues-raw/2227324689/ToBeBetter.svg?style=flat-square)](#)  [![origin](https://img.shields.io/badge/origin-not me-yellowgreen.svg?style=flat-square)](#)[![author](https://img.shields.io/badge/author-Charlotte-blue.svg?style=flat-square)](#) 
+# 乐优商城 - 微服务架构 [![issues](https://img.shields.io/bitbucket/issues-raw/2227324689/ToBeBetter.svg?style=flat-square)](#)  [![origin](https://img.shields.io/badge/origin-not me-yellowgreen.svg?style=flat-square)](#) [![author](https://img.shields.io/badge/author-Charlotte-blue.svg?style=flat-square)](#) 
 
 高仿项目。非原创。
 
 
 
+
+
 # 1.项目用到的技术
+
+
 
 项目采用前后端分离开发，前端代码已给，为leyou-manage-web和leyou-portal。
 
 核心的技术栈用的是SpringBoot+SpringCloud。
+
+
 
 ### 1.1 前端使用的技术
 
@@ -27,6 +33,8 @@
 - MySQL
 - Redis
 - FastDFS
+
+
 
 
 
@@ -53,7 +61,11 @@
 
 
 
+
+
 # 3.项目开发进度
+
+
 
 ### 3.1 前台用户界面
 
@@ -61,29 +73,41 @@
 - 注册、登录、点击商品属性加入购物车
 - 购物车、下单、支付
 
-![1](C:\Users\Lenovo\Desktop\temp\leyou\assets\1.jpg)
+ ![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/1.jpg)
+
+ 
+
+
+
+![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/2.jpg)
+
+ 
 
 
 
 
 
-![2](C:\Users\Lenovo\Desktop\temp\leyou\assets\2.jpg)
-
-
-
-![3](C:\Users\Lenovo\Desktop\temp\leyou\assets\3.jpg)
+![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/3.jpg)
 
 
 
 
 
-![4](C:\Users\Lenovo\Desktop\temp\leyou\assets\4.png)
+
+
+
+
+![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/4.png)
 
 
 
 
 
-![5](C:\Users\Lenovo\Desktop\temp\leyou\assets\5.png)
+
+
+
+
+![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/5.png)
 
 
 
@@ -98,19 +122,29 @@
 
 
 
-![TIM截图20191209214657](C:\Users\Lenovo\Desktop\temp\leyou\assets\TIM截图20191209214657.png)
+![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/TIM截图20191209214657.png)
 
 
 
 
 
-![TIM截图20191209214804](C:\Users\Lenovo\Desktop\temp\leyou\assets\TIM截图20191209214804.png)
+
+
+![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/TIM截图20191209214804.png)
 
 
 
 
 
-![TIM截图20191209214851](C:\Users\Lenovo\Desktop\temp\leyou\assets\TIM截图20191209214851.png)
+
+
+
+
+![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/TIM截图20191209214851.png)
+
+
+
+
 
 
 
@@ -119,6 +153,8 @@
 # 4.项目部署
 
 >部署前请先看注意事项修改相关配置
+
+
 
 
 
@@ -144,6 +180,8 @@ live-server --port=9002
 
 
 
+
+
 ### 4.3 开启后端项目
 
 用编译器打开项目，分别用tomcat启动各个模块。
@@ -154,7 +192,11 @@ live-server --port=9002
 
 
 
+
+
 # 5.注意事项
+
+
 
 ### 5.1依赖
 
@@ -187,6 +229,8 @@ public void testGetRsa() throws Exception {
 
 
 
+
+
 ### 5.3 阿里云验证码短信
 
 在leyou-ssm模块application.yml中配置了阿里云短信，这里改成你自己的账号。具体申请方式自发百度。
@@ -202,6 +246,8 @@ public void testGetRsa() throws Exception {
 
 
 
+
+
 ### 5.4 微信支付
 
 在leyou-order模块的微信支付配置（application.yml）需要自己去申请。
@@ -212,9 +258,13 @@ public void testGetRsa() throws Exception {
 
 
 
+
+
 ### 5.5 sql文件
 
 > 注意：只能MySQL5.6环境引入sql文件，其他的不行哦。
+
+
 
 
 
