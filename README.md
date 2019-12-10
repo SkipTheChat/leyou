@@ -1,8 +1,6 @@
-# 乐优商城 - 微服务架构 [![issues](https://img.shields.io/bitbucket/issues-raw/2227324689/ToBeBetter.svg?style=flat-square)](#)  [![origin](https://img.shields.io/badge/origin-not me-yellowgreen.svg?style=flat-square)](#) [![author](https://img.shields.io/badge/author-Charlotte-blue.svg?style=flat-square)](#) 
+# 乐优商城 - 微服务架构 [![issues](https://img.shields.io/bitbucket/issues-raw/2227324689/ToBeBetter.svg?style=flat-square)](#)  [![author](https://img.shields.io/badge/author-Charlotte-blue.svg?style=flat-square)](#) 
 
 高仿项目。非原创。
-
-
 
 
 
@@ -36,10 +34,6 @@
 
 
 
-
-
-
-
 # 2.项目模块说明
 
 | 作用                                                        | 模块名          | 端口     |
@@ -56,10 +50,6 @@
 | 购物车模块                                                  | leyou-cart      | 9088     |
 | 订单模块                                                    | leyou-order     | 9089     |
 | 公共模块，存放工具类等。（无需启动）                        | leyou-common    | 无需启动 |
-
-
-
-
 
 
 
@@ -146,10 +136,6 @@
 
 
 
-
-
-
-
 # 4.项目部署
 
 >部署前请先看注意事项修改相关配置
@@ -187,8 +173,6 @@ live-server --port=9002
 用编译器打开项目，分别用tomcat启动各个模块。
 
 **模块启动顺序与项目模块说明的顺序一致**。若不一致，可能导致启动报错。
-
-
 
 
 
@@ -268,9 +252,25 @@ public void testGetRsa() throws Exception {
 
 
 
-### 5.6 nginx地址配置参考
+### 5.6 nginx地址&host地址配置参考
 
-参考当前目录下的nginx.conf
+- nginx配置参考当前目录下nginx.conf
+
+- host配置如下
+
+  ```
+  # SwitchHosts!
+  
+  # My hosts
+  
+  # leyou
+  127.0.0.1 manage.leyou.com
+  127.0.0.1 api.leyou.com
+  192.168.153.129 image.leyou.com
+  127.0.0.1 www.leyou.com
+  ```
+
+  
 
 
 
