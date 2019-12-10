@@ -24,6 +24,7 @@
 
 - SpringBoot
 - SpringCloud
+- SpringJPA
 - Mybatis
 - Elasticsearch
 - RabbitMQ
@@ -31,14 +32,6 @@
 - MySQL
 - Redis
 - FastDFS
-
-
-
-### 1.3 其他
-
-- swagger-UI（后端文档接口书写）
-
-
 
 
 
