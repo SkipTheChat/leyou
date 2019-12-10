@@ -34,6 +34,14 @@
 
 
 
+### 1.3 其他
+
+- swagger-UI（后端文档接口书写）
+
+
+
+
+
 # 2.项目模块说明
 
 | 作用                                                        | 模块名          | 端口     |
@@ -154,6 +162,10 @@ npm start
 
 
 
+>[访问网址：manage.leyou.com](manage.leyou.com)
+
+
+
 
 
 ### 4.2 开启用户搜索界面
@@ -165,6 +177,8 @@ live-server --port=9002
 ```
 
 
+
+> [访问网址：www.leyou.com](www.leyou.com)
 
 
 
@@ -190,9 +204,9 @@ live-server --port=9002
 
 ### 5.2公钥私钥生成
 
- 验证用户登录需要使用公私钥，自动生成的代码在
+ 验证用户登录需要使用公私钥，自动生成的代码在leyou项目目录下：
 
-	> leyou-auth/leyou-auth-common/src/test/com/leyou/auth/test/JwtTest.java
+	leyou-auth/leyou-auth-common/src/test/com/leyou/auth/test/JwtTest.java
 
 
 
