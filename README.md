@@ -29,9 +29,10 @@
 - Elasticsearch
 - RabbitMQ
 - Thymeleaf
-- MySQL
+- mysql 5.6
 - Redis
 - FastDFS
+- nginx
 
 
 
@@ -64,13 +65,15 @@
 - 注册、登录、点击商品属性加入购物车
 - 购物车、下单、支付
 
- ![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/1.jpg)
+
+
+![image](./assets/1.jpg)
 
  
 
 
 
-![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/2.jpg)
+![image](./assets/2.jpg)
 
  
 
@@ -78,7 +81,7 @@
 
 
 
-![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/3.jpg)
+![image](./assets/3.jpg)
 
 
 
@@ -88,7 +91,7 @@
 
 
 
-![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/4.png)
+![image](./assets/4.png)
 
 
 
@@ -98,7 +101,7 @@
 
 
 
-![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/5.png)
+![image](./assets/5.png)
 
 
 
@@ -113,7 +116,7 @@
 
 
 
-![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/TIM截图20191209214657.png)
+![image](./assets/TIM截图20191209214657.png)
 
 
 
@@ -121,7 +124,7 @@
 
 
 
-![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/TIM截图20191209214804.png)
+![image](./assets/TIM截图20191209214804.png)
 
 
 
@@ -131,7 +134,7 @@
 
 
 
-![image](https://raw.githubusercontent.com/cristinejssssss/leyou/master/assets/TIM截图20191209214851.png)
+![image](./assets/TIM截图20191209214851.png)
 
 
 
